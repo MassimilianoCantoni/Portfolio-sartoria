@@ -1,0 +1,81 @@
+:root
+{
+    --mainAccent : #B5C4C0;
+    --mainDark : #45514D;
+    --mainWhite : #FFFFFF;
+
+    --fontHeading : 'Playfair Display', serif;
+    --fontBody :  'Mulish', sans-serif;
+    --fontHand :  'Mrs Saint Delafield', serif;
+    
+}
+
+body 
+{
+
+    background-color: var(--mainAccent);
+    display: grid;
+}
+
+h1 
+{
+
+    font-family: var(--fontHeading);
+    color: var(--mainWhite);
+}
+
+p
+{
+    font-family: var(--fontBody);
+}
+
+.hand
+{
+    font-family: var(--fontHand);
+    color: var(--mainDark)
+}
+
+#logo
+{
+    font-size: 1.4rem;
+    place-self: center;
+    width:70%;
+    
+    display:grid;
+    justify-items: center;
+    
+}
+
+#logo h1
+{
+    font-size: 13rem;
+}
+
+#logo p
+{
+    color: var(--mainWhite);
+    letter-spacing: 27px; 
+}
+
+#logo .hand
+{
+    font-size:7rem;
+    position:absolute;
+    place-self: center;
+}
+
+@media screen and (max-width: 992px){
+    
+    #logo h1
+    {
+        font-size: 7rem;
+    }
+    #logo .hand
+    {
+        font-size: 4rem;
+    }
+    #logo p
+    {
+        letter-spacing: 8px; 
+    }
+}
