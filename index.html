@@ -8,34 +8,57 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Mulish:wght@300&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Philosophy</a></li>
-        </ul>
-        <div id="logo">
-            <h1>MC</h1>
-            <p>&nbspSARTORIA</p>
-            <span class="hand">Cantoni</span>
-        </div>    
-        <ul>
-            <li><a href="">Works</a></li>
-            <li><a href="">Contacts</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Philosophy</a></li>
+            </ul>
+            <div id="logo">
+                <h1>MC</h1>
+                <p>&nbspSARTORIA</p>
+                <span class="hand">Cantoni</span>
+            </div>    
+            <ul>
+                <li><a href="">Works</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </nav>
 
+    <div class="mainFold container2Grid">
+        <div class="textHero">
+            <h2>Rediscovering craftsmanship in its classiest form.</h2>
+        </div>
+        <div class="container2Grid">
+            <div id="colonnaHero1" class="colonnaHero" style="background-image: url(images/heroImage1.jpg);">&nbsp</div>
+            <div id="colonnaHero2" class="colonnaHero" style="background-image: url(images/heroImage2.jpg);">&nbsp</div>
+        </div>
+    </div>
+       
+    </header>
+    <div id="hero" style="place-self: center;"></div>
     <div id="sideScroller">
-        <a href=""><span class="dot" style="background-color: var(--mainDark);"></span></a>
-        <a href=""><span class="dot"></span></a>
-        <a href=""><span class="dot"></span></a>
-        <a href=""><span class="dot"></span></a>
+        <a href="#logo"><span class="dot" id="ss1" style="background-color: var(--mainDark);"></span></a>
+        <a href="#prova1"><span class="dot" id="ss2"></span></a>
+        <a href="#prova2"><span class="dot" id="ss3"></span></a>
+        <a href="#prova3"><span class="dot" id="ss4"></span></a>
 
     </div>
     
+    <!-- <div style="height: 1000px;">&nbsp</div>
+    <div style=" width:300px;height:300px; background-color: red;" id="prova1"></div>
+    <div style="height: 1000px;">&nbsp</div>
+    <div style=" width:300px;height:300px; background-color: red;" id="prova2"></div>
+    <div style="height: 1000px;">&nbsp</div>
+    <div style=" width:300px;height:300px; background-color: red;" id="prova3"></div> -->
 
-    
+
+
+    <script src="script.js"></script>
 </body>
 </html>

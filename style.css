@@ -3,6 +3,7 @@
     --mainAccent : #B5C4C0;
     --mainDark : #45514D;
     --mainWhite : #FFFFFF;
+    --almostWhite : #f5f5f5;
 
     --fontHeading : 'Playfair Display', serif;
     --fontBody :  'Mulish', sans-serif;
@@ -10,11 +11,56 @@
     
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body 
 {
 
     background-color: var(--mainAccent);
     display: grid;
+}
+
+.container2Grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    
+}
+
+.colonnaHero
+{
+    background-size: cover;
+    min-height: 70vh;
+    width: 100%;
+}
+
+.mainFold h2
+{
+    font-size: 5rem;
+    color:var(--mainDark);
+}
+
+.mainFold 
+{
+    margin-left:10em;
+    margin-right:10em;
+    margin-top:7em;
+    align-items: start ;
+    gap:6em;
+}
+
+.mainFold .container2Grid
+{
+    gap: 3em;
+}
+
+.mainFold .textHero
+{
+    width:60%;
+    margin-left: 5em;
 }
 
 h1 
@@ -33,6 +79,68 @@ p
 {
     font-family: var(--fontHand);
     color: var(--mainDark)
+}
+
+nav
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    justify-content: center;
+    justify-items: center;
+    align-items: end;
+    /* background-color: var(--mainDark); */
+    padding-bottom: 1.5em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+nav ul li
+{
+    display: inline;
+    margin:4em;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: var(--fontBody);
+    color:var(--mainDark);
+    transition: color .5s;
+}
+
+nav ul li a:hover
+{
+    color: var(--mainWhite);
+}
+
+
+#sideScroller
+{
+    position:fixed;
+    background-color: var(--mainWhite);
+    height: 100%;
+    width:3.5em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 1.8rem;
+}
+
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: var(--mainAccent);
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.7s;
+}
+
+.dot:hover
+{
+    background-color: var(--almostWhite) !important;
 }
 
 #logo
@@ -63,6 +171,9 @@ p
     position:absolute;
     place-self: center;
 }
+
+
+
 
 @media screen and (max-width: 992px){
     
