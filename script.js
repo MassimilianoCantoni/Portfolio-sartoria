@@ -1,7 +1,7 @@
 $(document).ready(function() {
     
     
-        $('#hero').waypoint(function(direction) {
+        $('#mainTitle').waypoint(function(direction) {
             
                     $('#ss1').css("background-color", "var(--mainDark)");
                     $('#ss2').css("background-color", "var(--mainAccent)");
@@ -9,7 +9,7 @@ $(document).ready(function() {
                     $('#ss4').css("background-color", "var(--mainAccent)");
             
                 }, {
-                    offset: '0%' // L'azione verrà scatenata quando l'elemento è a metà schermo
+                    offset: '35%' // L'azione verrà scatenata quando l'elemento è a metà schermo
                 });
                 
 
