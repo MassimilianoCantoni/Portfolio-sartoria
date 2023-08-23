@@ -13,7 +13,7 @@ $(document).ready(function() {
                 });
                 
 
-        $('#prova1').waypoint(function(direction) {
+        $('#about').waypoint(function(direction) {
             if (direction === 'down')
             {
             $('#ss1').css("background-color", "var(--mainAccent)");

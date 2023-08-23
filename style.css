@@ -2,6 +2,7 @@
 {
     --mainAccent : #B5C4C0;
     --mainDark : #45514D;
+    --mainDarkTransparent : #45514dd7;
     --mainWhite : #FFFFFF;
     --almostWhite : #f5f5f5;
 
@@ -18,16 +19,74 @@ html {
 body 
 {
 
-    background-color: var(--mainAccent);
+    background-color: var(--mainDark);
     display: grid;
 }
 
-.container2Grid
+.containerGrid
 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+}
+
+.contentRow
+{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#about
+{
+    place-self: center;
+    grid-template-columns: 2fr 1fr;
+    margin-top:10em;
     
-    
+    width: 80%;
+}
+
+#aboutConBordo
+{
+    border-left: solid 3px var(--mainWhite);
+    padding-left:3em
+}
+
+#about h2
+{
+    font-size: 3rem;
+    font-family: var(--fontHeading);
+    color: var(--mainAccent);
+    margin-bottom:2em;
+}
+
+#about p
+{
+    font-size: 5rem;
+    line-height: 1.5em;
+    color: var(--mainWhite);
+}
+
+#containerIconeAbout
+{
+    margin-top:3.4em;
+}
+
+#containerIconeAbout img
+{
+    transition: all 0.6s;
+}
+#containerIconeAbout img:hover
+{
+    filter: hue-rotate(120deg);
+    transform: scale(1.1);
+}
+
+#about div
+{
+    /* border: solid 2px red; */
+}
+
+#immagineAbout img
+{
+    width:100%;
+
 }
 
 a
@@ -65,7 +124,8 @@ a
     width: 100%;
 }
 
-header
+
+.ombreggiaTesto
 {
     text-shadow: 0px 4px 9px rgba(0, 0, 0, 0.64);
 }
@@ -139,7 +199,7 @@ nav
     justify-content: center;
     justify-items: center;
     align-items: end;
-    background-color: var(--mainDark);
+    background-color: var(--mainDarkTransparent); 
     padding-bottom: 1.5em;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position:absolute;
